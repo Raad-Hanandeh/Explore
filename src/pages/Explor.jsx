@@ -94,21 +94,21 @@ function Home() {
             <ul className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-20">
               <li className="flex flex-col justify-end"><div><img src="./img/Quote-Icon.svg" alt="Quote" /></div></li>
               <li className=" border border-black-soft rounded-3xl p-8">
-                <p className=" text-20 font-normal text-black-soft font-DM-Sans mb-6">My travel dreams finally came true, thanks to them. I explored places I never thought I would see, and everything was seamless from start to finish during the trip.</p>
+                <p className=" text-16 xl:text-20 font-normal text-black-soft font-DM-Sans mb-6">My travel dreams finally came true, thanks to them. I explored places I never thought I would see, and everything was seamless from start to finish during the trip.</p>
                 <div className="flex gap-5">
                   <img src="./img/circle.svg" alt="circle" />
                   <div>
-                    <p className=" text-16 font-bold text-black-soft font-DM-Sans ">Priya Marcella</p>
+                    <p className=" text-16 font-bold text-black-soft font-DM-Sans text-nowrap ">Priya Marcella</p>
                     <span className=" text-16 font-normal text-black-soft font-DM-Sans ">India</span>
                   </div>
                 </div>
               </li>
               <li className=" border border-black-soft rounded-3xl p-8">
-                <p className=" text-20 font-normal text-black-soft font-DM-Sans mb-6">They provided an amazing adventure that I'll never forget. The accommodations were top-notch, and the itinerary was a perfect trip of relaxation and excitement.</p>
+                <p className=" text-16 xl:text-20 font-normal text-black-soft font-DM-Sans mb-6">They provided an amazing adventure that I'll never forget. The accommodations were top-notch, and the itinerary was a perfect trip of relaxation and excitement.</p>
                 <div className="flex gap-5">
                   <img src="./img/circle.svg" alt="circle" />
                   <div>
-                    <p className=" text-16 font-bold text-black-soft font-DM-Sans ">Jose Miguel</p>
+                    <p className=" text-16 font-bold text-black-soft font-DM-Sans text-nowrap ">Jose Miguel</p>
                     <span className=" text-16 font-normal text-black-soft font-DM-Sans ">Spain</span>
                   </div>
                 </div>
@@ -122,12 +122,12 @@ function Home() {
             <h2 className="xl:max-w-3xl  text-36 md:text-64 xl:text-80 font-normal text-black-soft font-DM-Sans mb-5"><span >Ready to</span> <span className=" font-Playfair-Display italic">embark</span><br /> <span>on a </span> <span className=" font-Playfair-Display italic">new</span> <span>journey?</span></h2>
             <p className="xl:max-w-4xl text-center text-20 font-normal font-DM-Sans text-black-soft">Don't let your dream getaway remain a dream any longer. Take action now and let us craft your next unforgettable adventure. Join us in turning your travel fantasies into unforgettable realities.</p>
             <div className=" bg-gray-soft py-12 px-4 xl:px-12 rounded-3xl mt-16">
-                <div className=" xl:space-x-5 flex flex-col sm:flex-row">
+                <div className=" xl:space-x-5 flex justify-around flex-col sm:flex-row">
                   <div className="border-b border-black-soft py-2 mb-4 sm:mb-0">
-                  <input className="opacity-50 px-2 xl:w-402  bg-transparent placeholder:text-16  placeholder:text-black-soft placeholder:font-DM-Sans placeholder:font-normal" type="text" placeholder="Name" />
+                  <input className="opacity-50 px-2  xl:w-402  bg-transparent placeholder:text-16  placeholder:text-black-soft placeholder:font-DM-Sans placeholder:font-normal" type="text" placeholder="Name" />
                   </div>
                   <div className="border-b border-black-soft py-2">
-                  <input className="opacity-50 px-2 xl:w-402  bg-transparent placeholder:text-16  placeholder:text-black-soft placeholder:font-DM-Sans placeholder:font-normal" type="text" placeholder="Phone Number" />
+                  <input className="opacity-50 px-2   xl:w-402  bg-transparent placeholder:text-16  placeholder:text-black-soft placeholder:font-DM-Sans placeholder:font-normal" type="text" placeholder="Phone Number" />
                   </div>
                 </div>
                 <div className="border-b border-black-soft py-2 mt-12">
@@ -154,7 +154,7 @@ function Home() {
           <div>
             <p className=" text-center font-DM-Sans text-20 font-normal text-white">We are trusted by our partners and brands</p>
           </div>
-          <div className="grid grid-cols-6  justify-items-center mt-10">
+          <div className="grid grid-cols-6  justify-items-center mt-10 pb-10">
             <img src="./img/Logo1.svg" alt="Logo" />
             <img src="./img/Logo2.svg" alt="Logo" />
             <img src="./img/Logo3.svg" alt="Logo" />

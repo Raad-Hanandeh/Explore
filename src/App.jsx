@@ -1,5 +1,5 @@
-import Experience from "./components/Experience"
-import Nav from "./components/Nav"
+
+import Footer from "./components/Footer"
 import Explor from './pages/Explor'
 
 
@@ -9,7 +9,8 @@ function App() {
 
   return (
     <>
-    <Explor/>
+   <Explor/>
+   <Footer/>
     </>
   )
 }

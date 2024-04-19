@@ -22,6 +22,7 @@ export default {
     extend: {
       width: {
         '402': '25.125rem',
+        '300':'18.75rem'
       },
       height: {
         '720': '45rem',

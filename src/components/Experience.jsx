@@ -48,18 +48,20 @@ function Experience() {
             {slider.map((item)=>{
                 return(
                     <> 
-                    <li className=" h-424 w-full rounded-xl bg-cover" style={{backgroundImage: `url(${item.img})`}}>
-                        <div className="flex flex-col justify-between h-full p-4">
-                            <div className="flex justify-end "><img src="./img/Heart-Icon.svg" alt="Heart" /></div>
-                            <div >
-                            <p className="text-20 font-bold text-white font-DM-Sans">{item.text}</p>
-                            <div className="flex justify-between ">
-                                <span className="text-16 font-normal text-white font-DM-Sans">{item.span}</span>
-                                <span className="text-20 font-normal text-white font-DM-Sans">{item.price}</span>
+                    <a href="#">
+                        <li className="h-424 sm:h-80 xl:h-424 w-full rounded-xl bg-cover" style={{backgroundImage: `url(${item.img})`}}>
+                            <div className="flex flex-col justify-between h-full p-4">
+                                <div className="flex justify-end "><img src="./img/Heart-Icon.svg" alt="Heart" /></div>
+                                <div >
+                                <p className="text-16 xl:text-20 font-bold text-white font-DM-Sans text-nowrap">{item.text}</p>
+                                <div className="flex justify-between ">
+                                    <span className=" text-14 xl:text-16 font-normal text-white font-DM-Sans">{item.span}</span>
+                                    <span className="text-16 xl:text-20 font-normal text-white font-DM-Sans">{item.price}</span>
+                                </div>
                             </div>
-                        </div>
-                        </div>
-                </li>
+                            </div>
+                        </li>
+                    </a>
                     </>
                 )
             })}
