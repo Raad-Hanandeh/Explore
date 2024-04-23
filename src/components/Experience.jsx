@@ -44,21 +44,23 @@ function Experience() {
                 <a href="#" className="text-16 font-bold text-black-soft">See All Packages</a>
             </div>
         </div>
-        <ul className="grid grid-cols-1 sm:grid-cols-4 gap-3 mt-10">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mt-10">
             {slider.map((item)=>{
                 return(
                     <> 
                     <a href="#">
-                        <li className="h-424 sm:h-80 xl:h-424 w-full rounded-xl bg-cover" style={{backgroundImage: `url(${item.img})`}}>
+                        <li className="h-424 w-full rounded-xl bg-cover  bg-card-gradiant" style={{backgroundImage: `url(${item.img})`}}>
                             <div className="flex flex-col justify-between h-full p-4">
-                                <div className="flex justify-end "><img src="./img/Heart-Icon.svg" alt="Heart" /></div>
+                                <div className="flex justify-end">
+                                    <div className="flex justify-center items-center h-50 w-50 rounded-full bg-heart-gradiant "><img className="rounded-full" src="./img/heart.svg" alt="Heart" /></div>
+                                </div>
                                 <div >
                                 <p className="text-16 xl:text-20 font-bold text-white font-DM-Sans text-nowrap">{item.text}</p>
                                 <div className="flex justify-between ">
                                     <span className=" text-14 xl:text-16 font-normal text-white font-DM-Sans">{item.span}</span>
                                     <span className="text-16 xl:text-20 font-normal text-white font-DM-Sans">{item.price}</span>
                                 </div>
-                            </div>
+                                </div>
                             </div>
                         </li>
                     </a>

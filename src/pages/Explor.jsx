@@ -5,27 +5,26 @@ function Home() {
   return (
     <>
     <main >
-      <section className=" h-screen bg-cover" style={{backgroundImage: "url(./img/heroImg.jpg)"}}>
-        <div className=" max-w-screen-xl mx-auto">
-          <Nav />
+      <section className=" h-screen bg-cover " style={{backgroundImage: "url(./img/heroImg.jpg)"}}>
+        <div className=" h-screen flex flex-col  justify-between  max-w-screen-xl mx-auto">
+            <Nav />
+             
+                <div className="flex flex-col  items-center max-w-screen-xl mx-auto  ">
+                    <button className=" bg-main-gradient py-3 px-6  rounded-full xl:text-16 text-12 text-white font-bold mb-6">The Best Place to Start Your Adventure</button>
+                    <p className=" text-30 sm:text-48 xl:text-80  leading-none max-w-2xl xl:max-w-3xl text-center text-white"><span className=" font-DM-Sans">Embark on</span> <span className=" font-Playfair-Display italic">journeys</span> <span className=" font-DM-Sans">not</span> <span className=" font-Playfair-Display italic">just</span> <span className=" font-DM-Sans">destinations</span><span className=" font-DM-Sans"> with</span><span className=" font-Playfair-Display italic"> our trips.</span></p>
+                  </div>
+                  <div className="flex flex-col sm:flex-row sm:justify-between xl:items-center max-w-screen-xl mx-auto w-full pb-14 xl:pb-20 px-2">
+                    <p className="text-white max-w-xs xl:max-w-sm text-14 xl:text-16 font-DM-Sans font-normal mb-8" >Unlock the doors to diverse cultures, awe-inspiring landscapes, and thrilling adventures with us.</p>
+                    <div><button className="text-white flex items-center font-DM-Sans   bg-slate-400 rounded-full  font-bold gap-3 py-2 px-8 "><span>Explore Now</span> <img src="./img/Arrow-Icon.svg" alt="arrow" /></button></div>
+                  </div>
         </div>
-        <div className="flex flex-col justify-center items-center max-w-screen-xl mx-auto pt-16 pb-28">
-          <button className="py-3 px-6 bg-gray-400 rounded-full xl:text-16 text-12 text-white font-bold mb-6">The Best Place to Start Your Adventure</button>
-          <p className=" text-30 sm:text-36 xl:text-80  leading-none max-w-2xl xl:max-w-3xl text-center text-white"><span className=" font-DM-Sans">Embark on</span> <span className=" font-Playfair-Display italic">journeys</span> <span className=" font-DM-Sans">not</span> <span className=" font-Playfair-Display italic">just</span> <span className=" font-DM-Sans">destinations</span><span className=" font-DM-Sans"> with</span><span className=" font-Playfair-Display italic"> our trips.</span></p>
-        </div>
-        <div className="flex flex-col sm:flex-row sm:justify-between xl:items-center max-w-screen-xl mx-auto px-2">
-          <p className="text-white max-w-xs xl:max-w-sm text-14 xl:text-16 font-DM-Sans font-normal mb-14 sm:mb-0" >Unlock the doors to diverse cultures, awe-inspiring landscapes, and thrilling adventures with us.</p>
-          <div><button className="text-white flex items-center font-DM-Sans   bg-slate-400 rounded-full  font-bold gap-3 py-2 px-8 "><span>Explore Now</span> <img src="./img/Arrow-Icon.svg" alt="arrow" /></button></div>
-
-        </div>
-
       </section>
       <section className=" max-w-screen-xl mx-auto mt-24 px-2 xl:px-0">
         <Experience />
       </section>
       <section className="bg-gray-soft">
       <section className="max-w-screen-xl mx-auto  mt-24 py-24 px-2 xl:px-0" >
-        <div className="grid grid-cols-1 sm:grid-cols-2  justify-items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2  justify-items-center">
           <div className=" h-512 max-w-lg flex flex-col justify-between text-center xl:text-start">
             <p className="text-36 xl:text-64 font-normal text-black-soft"><span className=" font-DM-Sans ">Our true</span> <span className=" font-Playfair-Display italic" >beliefs</span> <span className=" font-DM-Sans italic">for</span> <span className=" font-Playfair-Display italic">your</span> <span className=" font-DM-Sans ">benefits</span></p>
             <p className=" font-DM-Sans text-black-soft font-normal text-16 xl:text-20 opacity-75">Our beliefs arent just words; they are the foundation of every adventure we offer. With high commitment to sustainability, authenticity, and customer-centricity, we ensure that every trip you take with us is valuable.</p>
@@ -37,7 +36,7 @@ function Home() {
               <img src="./img/Icon.svg" alt="item" />
               <div>
                 <h5 className=" text-14 xl:text-16 font-bold text-black-soft">Customer-Centric</h5>
-                <p className=" text-14 xl:text-16 font-normal text-black-soft opacity-75">Being customer-centric is the compass that guides our travel services. We prioritize our customers' needs.</p>
+                <p className=" text-14 xl:text-16 font-normal text-black-soft opacity-75">Being customer-centric is the compass that guides our travel services. We prioritize our {"customers"} needs.</p>
               
               </div>
             </div>
@@ -53,7 +52,7 @@ function Home() {
              <img src="./img/Icon3.svg" alt="item" />
               <div>
                 <h5 className=" text-14 xl:text-16 font-bold text-black-soft">Authentic Experiences</h5>
-                <p className=" text-14 xl:text-16 font-normal text-black-soft opacity-75">We deliver journeys that immerse you in unforgettable encounter with the world's diverse cultures & landscapes.</p>
+                <p className=" text-14 xl:text-16 font-normal text-black-soft opacity-75">We deliver journeys that immerse you in unforgettable encounter with the {"world's"} diverse cultures & landscapes.</p>
               
               </div>
             </div>
@@ -72,8 +71,8 @@ function Home() {
      <section className="  px-2 xl:px-0">
      <section  className=" max-w-screen-xl mx-auto bg-gray-dark h-560 rounded-3xl mt-24">
         <div className="flex flex-col justify-center items-center h-full">
-          <a href="#"><img src="./img/Play-Button.svg" alt="play" /></a>
-          <p className=" text-36 xl:text-64 text-white font-Playfair-Display"><span className=" font-DM-Sans">Our</span> <span className=" italic font-Playfair-Display">journey</span> <span className=" font-DM-Sans">in pictures</span></p>
+          <a href="#"> <div className=" bg-heart-gradiant rounded-full w-100 h-100 flex justify-center items-center"><img src="./img/Polygon.svg" alt="play" /></div></a>
+          <p className=" text-36 xl:text-64 text-white font-Playfair-Display text-center"><span className=" font-DM-Sans">Our</span> <span className=" italic font-Playfair-Display">journey</span> <span className=" font-DM-Sans">in pictures</span></p>
           <span className=" text-16 font-normal text-white  font-DM-Sans text-center">See what makes each experience with our trips exceptional.</span>
         </div>
       </section>
@@ -98,17 +97,17 @@ function Home() {
                 <div className="flex gap-5">
                   <img src="./img/circle.svg" alt="circle" />
                   <div>
-                    <p className=" text-16 font-bold text-black-soft font-DM-Sans text-nowrap ">Priya Marcella</p>
+                    <p className=" text-16 font-bold text-black-soft font-DM-Sans text-nowrap sm:text-wrap ">Priya Marcella</p>
                     <span className=" text-16 font-normal text-black-soft font-DM-Sans ">India</span>
                   </div>
                 </div>
               </li>
               <li className=" border border-black-soft rounded-3xl p-8">
-                <p className=" text-16 xl:text-20 font-normal text-black-soft font-DM-Sans mb-6">They provided an amazing adventure that I'll never forget. The accommodations were top-notch, and the itinerary was a perfect trip of relaxation and excitement.</p>
+                <p className=" text-16 xl:text-20 font-normal text-black-soft font-DM-Sans mb-6">They provided an amazing adventure that {"I'll"} never forget. The accommodations were top-notch, and the itinerary was a perfect trip of relaxation and excitement.</p>
                 <div className="flex gap-5">
                   <img src="./img/circle.svg" alt="circle" />
                   <div>
-                    <p className=" text-16 font-bold text-black-soft font-DM-Sans text-nowrap ">Jose Miguel</p>
+                    <p className=" text-16 font-bold text-black-soft font-DM-Sans text-nowrap sm:text-wrap ">Jose Miguel</p>
                     <span className=" text-16 font-normal text-black-soft font-DM-Sans ">Spain</span>
                   </div>
                 </div>
@@ -116,11 +115,11 @@ function Home() {
              
             </ul>
       </section>
-      <section className=" bg-gray-dark mt-24 p-2">
-        <div className="max-w-screen-xl mx-auto ">
+      <section className="  mt-24 p-2 bg-cover bg-bottom "  style={{backgroundImage: "url(./img/pexels-toulouse-3099153.jpg)"}}>
+        <div className="max-w-screen-xl mx-auto">
           <div className=" flex flex-col justify-center items-center">
             <h2 className="xl:max-w-3xl  text-36 md:text-64 xl:text-80 font-normal text-black-soft font-DM-Sans mb-5"><span >Ready to</span> <span className=" font-Playfair-Display italic">embark</span><br /> <span>on a </span> <span className=" font-Playfair-Display italic">new</span> <span>journey?</span></h2>
-            <p className="xl:max-w-4xl text-center text-20 font-normal font-DM-Sans text-black-soft">Don't let your dream getaway remain a dream any longer. Take action now and let us craft your next unforgettable adventure. Join us in turning your travel fantasies into unforgettable realities.</p>
+            <p className="xl:max-w-4xl text-center text-20 font-normal font-DM-Sans text-black-soft">{"Don't "}let your dream getaway remain a dream any longer. Take action now and let us craft your next unforgettable adventure. Join us in turning your travel fantasies into unforgettable realities.</p>
             <div className=" bg-gray-soft py-12 px-4 xl:px-12 rounded-3xl mt-16">
                 <div className=" xl:space-x-5 flex justify-around flex-col sm:flex-row">
                   <div className="border-b border-black-soft py-2 mb-4 sm:mb-0">
